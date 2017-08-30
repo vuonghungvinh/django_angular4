@@ -1,0 +1,29 @@
+.dir_deatil .details_img i{
+    color: #fff;
+    font-size: 28px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.dir_deatil .details_img{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dir_deatil .details_img h5{
+	flex-grow: 1;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.dir_deatil .details_img i{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50px;
+}

@@ -1,0 +1,39 @@
+<div class="featured_product bs tab_le">
+    <div class="discount-deals">
+        <h3>{{text1}} <span class="red">{{text2}}</span></h3>
+    </div>
+    <div id="slider-control">
+        <a class="left carousel-control" href="#itemslider{{text1}}" data-slide="prev"><img src="ng/images/slide-left.png" alt="Left" class="img-responsive"></a>
+        <a class="right carousel-control" href="#itemslider{{text1}}" data-slide="next"><img src="ng/images/slide-right.png" alt="Right" class="img-responsive"></a>
+    </div>
+    <!-- Item slider-->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="carousel carousel-showmanymoveone {{text1}} slide" id="itemslider{{text1}}">
+            <div class="carousel-inner">
+                <div *ngFor="let adname of adnames; let idx = index;" [ngClass]="idx == 0?'item active': 'item'">
+                    <div class="col-xs-12 col-sm-6 col-md-2">
+                        <a [routerLink]="['/ad-detail', adname.slug]" [queryParams]="{ id: adname.pk }" class="product_view">
+                            <img *ngIf="adname.adimages.length > 0" [src]="[adname.adimages[0].image]" class="img-responsive center-block">
+                            <img *ngIf="adname.adimages.length <= 0" src="">
+                        </a>
+                        <h4 class="text-center">{{adname.ad_title}}</h4>
+                        <img src="ng/images/stars.jpg" class="star_">
+                        <h5 class="text-center"><span>Rs 499</span> [30% OFF]</h5>
+                        <h6 class="text-center">Rs 350</h6>
+                    </div>
+                    <div *ngFor="let ad of adname.copy; let idx1 = index;" class="col-xs-12 col-sm-6 col-md-2 cloneditem-{{idx1+1}}">
+                        <a [routerLink]="['/ad-detail', ad.slug]" [queryParams]="{ id: ad.pk }" class="product_view">
+                            <img *ngIf="ad.adimages.length > 0" [src]="[ad.adimages[0].image]" class="img-responsive center-block">
+                            <img *ngIf="ad.adimages.length <= 0" src="">
+                        </a>
+                        <h4 class="text-center">{{ad.ad_title}}</h4>
+                        <img src="ng/images/stars.jpg" class="star_">
+                        <h5 class="text-center"><span>Rs 499</span> [30% OFF]</h5>
+                        <h6 class="text-center">Rs 350</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--slider-->
+</div>

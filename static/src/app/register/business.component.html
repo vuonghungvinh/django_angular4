@@ -1,0 +1,154 @@
+<div class="login-wraper signup sign_up">
+    <div class="container">
+        <div class="row">
+            <h1>Signup with Business Account</h1>
+            <div class="jumbotron signup-jumbo">
+                <!-- Signup left section -->
+                <div class="col-sm-11 col-md-7 accnt_typ account_s">
+                    <h4> Our Features and Services</h4>
+                    <p class="listing">
+                        Post your products for sale. Have your products feature for 10x more visibility. Review products and services. Exclusive dashboard with all your activities in one window...
+                    </p>
+                    <img src="ng/images/img-new.png" class="img-responsive system hidden-xs hidden-sm">
+                </div>
+                <!-- Signup right section -->
+                <div class="col-sm-5 sign_frm">
+                    <form role="form" class="signup_form" (ngSubmit)="registerForm(f.value)" #f="ngForm">
+                        <fieldset>
+                            <div class="form-group name_s">
+                                <div class="col-sm-6 business_name">
+                                    <label>Business Name</label>
+                                    <div class="txt-icon">
+                                        <i class="icon-user fa"></i>
+                                        <input type="text" name="business_name" required #business_name="ngModel" ngModel id="business_name" class="form-control input-lg">
+                                    </div>
+                                    <div *ngIf="business_name.errors  && (business_name.dirty || business_name.touched)" class="text text-danger text-left">
+                                        <div [hidden]="!business_name.errors.required">
+                                           Business Name is required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 legal_name">
+                                    <label>Business Alias</label>
+                                    <div class="txt-icon">
+                                        <i class="icon-user fa"></i>
+                                        <input type="text" name="business_alias" required #business_alias="ngModel" ngModel id="business_alias" class="form-control input-lg">
+                                    </div>
+                                    <div *ngIf="business_alias.errors && (business_alias.dirty || business_alias.touched)" class="text text-left text-danger">
+                                        <div [hidden]="!business_alias.errors.required">
+                                            Business Alias is required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <div class="txt-icon">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <input type="email" name="email" required pattern = "^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" #email="ngModel" ngModel id="email" class="form-control input-lg">
+                                </div>
+                                <div *ngIf="email.errors && (email.dirty || email.touched)" class="text text-left text-danger">
+                                    <div [hidden]="!email.errors.required">
+                                        Email is required.
+                                    </div>
+                                    <div [hidden]="!email.errors.pattern">
+                                        Email adress invalid.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>User Name</label>
+                                <div class="txt-icon">
+                                    <i class="icon-user fa"></i>
+                                    <input type="text" name="username" id="username" required #username="ngModel" ngModel class="form-control input-lg">
+                                </div>
+                                <div *ngIf="username.errors && (username.dirty || username.touched)" class="text text-danger text-left">
+                                    <div [hidden]="!username.errors.required">
+                                        Username is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group name_s">
+                                <div class="col-sm-6 business_name">
+                                    <label>Password</label>
+                                    <div class="txt-icon">
+                                        <i class="icon-lock fa"></i>
+                                        <input type="password" name="password" required #password="ngModel" (ngModelChange)="changepassword(f.value, $event)" ngModel minlength="8" id="password" class="form-control input-lg">
+                                    </div>
+                                    <div *ngIf="password.errors && (password.dirty || password.touched)" class="text text-left text-danger">
+                                        <div [hidden]="!password.errors.minlength">
+                                            Passsword must contain at least 8 characters.
+                                        </div>
+                                        <div [hidden]="!password.errors.required">
+                                            Passsword is required.
+                                        </div>
+                                    </div>
+                                    <div *ngIf="!validate_password" class="text text-left text-danger">
+                                        <div [hidden]="validate_password">
+                                            {{meesage_password}}.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 legal_name">
+                                    <label>Confirm Password</label>
+                                    <div class="txt-icon">
+                                        <i class="fa fa-unlock" aria-hidden="true"></i>
+                                        <input type="password" required name="password_confirmation" #password_confirmation="ngModel" ngModel [pattern]="password.value" id="password_confirmation" class="form-control input-lg">
+                                    </div>
+                                    <div *ngIf="password_confirmation.errors && (password_confirmation.dirty || password_confirmation.touched)" class="text text-danger text-left">
+                                        <div [hidden]="!password_confirmation.errors.required">
+                                            Passwords is required.
+                                        </div>
+                                        <div [hidden]="!password_confirmation.errors.pattern">
+                                            Passwords do not match.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Type of Business</label>
+                                <select style="height: 36px;" required  #business_type="ngModel" ngModel id="business_type" name="business_type" class="form-control input-lg" tabindex="2">
+                                    <option value="" selected="selected">-- Choose Category --</option>
+                                    <option *ngFor="let bcategory of bcategories" value="{{bcategory.pk}}">{{bcategory.category}}</option>
+                                </select>
+                                <div *ngIf="business_type.errors && (business_type.dirty || business_type.touched)" class="text text-danger text-left">
+                                    <div [hidden]="!business_type.errors.required">
+                                        Type of Business is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group cmpny_loction">
+                                <label>Company HQ Location</label>
+                                <div class="col-sm-6 business_name">
+                                    <select style="height: 36px;" id="hq_country" name="hq_country" #hq_country="ngModel" ngModel required (change)="changeCountry($event.target.value)"  class="form-control input-lg" tabindex="2">
+                                        <option value="" selected="selected">-- Choose Country --</option>
+                                        <option *ngFor="let country of countries" value="{{country.code}}">{{country.value}}</option>
+                                    </select>
+                                    <div *ngIf="hq_country.errors && (hq_country.dirty || hq_country.touched)" class="text text-danger text-left">
+                                        <div [hidden]="!hq_country.errors.required">
+                                            Country is required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 business_name">
+                                    <select id="hq_city" style="height: 36px;" required name='hq_city' #hq_city="ngModel" ngModel class="form-control input-lg" tabindex="2">
+                                        <option value="" selected="selected">-- Choose State --</option>
+                                        <option *ngFor="let city of cities" value="{{city.id}}">{{city.city}}</option>
+                                    </select>
+                                    <div *ngIf="hq_city.errors && (hq_city.dirty || hq_city.touched)" class="text text-danger text-left">
+                                        <div [hidden]="!hq_city.errors.required">
+                                            City is required.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" [disabled]="!f.form.valid || !validate_password" class="regis_ter btns"><span><i class="fa fa-user-plus" aria-hidden="true"></i></span>Create Account</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

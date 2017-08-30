@@ -1,0 +1,570 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-24 17:51+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\accounts\forms.py:11
+msgid "Individual Account"
+msgstr "حساب فردي"
+
+#: .\accounts\forms.py:11
+msgid "Business Account"
+msgstr "حساب الأعمال"
+
+#: .\accounts\forms.py:16 .\accounts\forms.py:23 .\accounts\forms.py:73
+msgid "Password"
+msgstr "كلمه السر"
+
+#: .\accounts\forms.py:20 .\accounts\forms.py:60
+msgid "-- Choose City --"
+msgstr "- اختر المدينة -"
+
+#: .\accounts\forms.py:21 .\accounts\forms.py:75 .\accounts\forms.py:80
+msgid "Enter first name"
+msgstr "أدخل الإسم الأول"
+
+#: .\accounts\forms.py:21 .\accounts\forms.py:75 .\accounts\forms.py:80
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#: .\accounts\forms.py:22 .\accounts\forms.py:76 .\accounts\forms.py:81
+msgid "Enter last name"
+msgstr "إدخال اسم آخر"
+
+#: .\accounts\forms.py:23 .\accounts\forms.py:73
+msgid "Enter Password"
+msgstr "أدخل كلمة المرور"
+
+#: .\accounts\forms.py:24 .\accounts\forms.py:74
+msgid "Confirm Password"
+msgstr "تأكيد كلمة المرور"
+
+#: .\accounts\forms.py:25
+msgid "Gender"
+msgstr "جنس"
+
+msgid "Select Age"
+msgstr "اختر مدينة"
+
+#: .\accounts\forms.py:26
+msgid "Age"
+msgstr "عم"
+
+#: .\accounts\forms.py:27 .\accounts\forms.py:70
+msgid "Select city"
+msgstr "اختر مدينة"
+
+#: .\accounts\forms.py:28 .\accounts\forms.py:78 .\accounts\forms.py:83
+msgid "Enter Contact Number"
+msgstr "أدخل رقم الاتصال"
+
+#: .\accounts\forms.py:28 .\accounts\forms.py:78 .\accounts\forms.py:83
+msgid "Contact Number"
+msgstr "أدخل رقم الاتصال"
+
+#: .\accounts\forms.py:29 .\accounts\forms.py:79 .\accounts\forms.py:84
+msgid "Enter Email"
+msgstr "أدخل البريد الإلكتروني"
+
+#: .\accounts\forms.py:30
+msgid "Hide Personal Details"
+msgstr "إخفاء تفاصيل الشخصية"
+
+#: .\accounts\forms.py:31
+msgid "Hide Contact Details"
+msgstr "إخفاء تفاصيل الاتصال"
+
+#: .\accounts\forms.py:32 .\templates\home.html:697
+msgid "Location"
+msgstr "موقع"
+
+#: .\accounts\forms.py:44 .\accounts\forms.py:98
+msgid "You must confirm your password"
+msgstr "يجب عليك تأكيد كلمة المرور"
+
+#: .\accounts\forms.py:46 .\accounts\forms.py:100
+msgid "Passwords do not match"
+msgstr "كلمات المرور غير متطابقة"
+
+#: .\accounts\forms.py:54 .\accounts\forms.py:109
+msgid "Email Address Already Exists"
+msgstr " بالفعل عنوان البريد الإلكتروني موجود"
+
+#: .\accounts\forms.py:62
+msgid "-- Choose Category --"
+msgstr "اختيار الفئة"
+
+msgid "-- Choose HQ Location --"
+msgstr "اختيار الفئة"
+
+msgid "Enter Company Name"
+msgstr "أدخل رقم الاتصال"
+
+#: .\accounts\forms.py:65
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#: .\accounts\forms.py:66
+msgid "Company Alias"
+msgstr "شركة الاسم المستعار"
+
+#: .\accounts\forms.py:68
+msgid "Business"
+msgstr "نوع"
+
+msgid "Type of Business"
+msgstr "نوع من الاعمال"
+
+msgid "Enter your address"
+msgstr "إدخال الكلمات الرئيسية"
+
+#: .\accounts\forms.py:71
+msgid "Company HQ Location"
+msgstr "شركة HQ الموقع"
+
+#: .\accounts\forms.py:72
+msgid "Enter brief description"
+msgstr "أدخل وصف مختصر"
+
+#: .\accounts\forms.py:77 .\accounts\forms.py:82
+msgid "Enter designation"
+msgstr "أدخل التعيين"
+
+#: .\accounts\forms.py:77 .\accounts\forms.py:82
+msgid "Designation"
+msgstr "التعيين"
+
+#: .\templates\base.html:213
+msgid "Cities"
+msgstr "مدن"
+
+#: .\templates\base.html:238
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: .\templates\base.html:239
+msgid "Register"
+msgstr "تسجيل"
+
+#: .\templates\footer.html:8
+msgid "About"
+msgstr "حول"
+
+#: .\templates\footer.html:15
+msgid "Contact us"
+msgstr "اتصل بنا"
+
+#: .\templates\footer.html:24
+msgid "Get Social"
+msgstr "كن أجتماعى"
+
+#: .\templates\footer.html:30
+msgid "Post"
+msgstr "بريد"
+
+#: .\templates\footer.html:32 .\templates\footer.html.py:33
+msgid "Add Free Post"
+msgstr "إضافة وظيفة الحرة"
+
+#: .\templates\footer.html:32
+msgid "here"
+msgstr "إهنا"
+
+#: .\templates\footer.html:40
+msgid "All rights reserved"
+msgstr "كل الحقوق محفوظة"
+
+#: .\templates\home.html:117
+msgid "Enter Keywords"
+msgstr "إدخال الكلمات الرئيسية"
+
+#: .\templates\home.html:120
+msgid "Search All"
+msgstr "بحث جميع"
+
+#: .\templates\home.html:122
+msgid "Classifieds"
+msgstr "إعلانات مبوبة"
+
+#: .\templates\home.html:124 .\templates\home.html.py:490
+msgid "Jobs"
+msgstr "مدن"
+
+#: .\templates\home.html:125 .\templates\home.html.py:564
+msgid "Community"
+msgstr "مجتمع"
+
+#: .\templates\home.html:130 .\templates\home.html.py:138
+msgid "Search"
+msgstr "بحث"
+
+#: .\templates\home.html:133
+msgid "Advanced Search"
+msgstr "البحث المتقدم"
+
+#: .\templates\home.html:154
+msgid "latest"
+msgstr "آخر"
+
+#: .\templates\home.html:155
+msgid "Featured"
+msgstr "متميز"
+
+#: .\templates\home.html:156
+msgid "Discounted"
+msgstr "مخفضة"
+
+#: .\templates\home.html:238
+msgid "Deals and"
+msgstr "صفقات و"
+
+#: .\templates\home.html:238
+msgid "Offers"
+msgstr "عروض"
+
+#: .\templates\home.html:444
+msgid "Business Directory "
+msgstr "الدليل التجاري"
+
+#: .\templates\home.html:466
+msgid "Automobiles"
+msgstr "سيارات"
+
+#: .\templates\home.html:477
+msgid "Property"
+msgstr "الملكية"
+
+#: .\templates\home.html:504
+msgid "Services"
+msgstr "خدمات"
+
+#: .\templates\home.html:518
+msgid "Learning"
+msgstr "تعلم"
+
+#: .\templates\home.html:531
+msgid "Pets"
+msgstr "الحيوانات الأليفة"
+
+#: .\templates\home.html:542
+msgid "For Sale"
+msgstr "للبيع"
+
+#: .\templates\home.html:582
+msgid "View More"
+msgstr "شاهد المزيد"
+
+#: .\templates\home.html:591
+msgid "Latest Business Listing"
+msgstr "أحدث قائمة الأعمال"
+
+#: .\templates\home.html:675
+msgid "Trusted Seller"
+msgstr "بائع موثوق به"
+
+#: .\templates\home.html:686
+msgid "Categories"
+msgstr "الفئات"
+
+#: .\templates\home.html:708
+msgid "Facebook Fans"
+msgstr "عشاق الفيسبوك"
+
+#~ msgid "Jobs "
+#~ msgstr "وظائف"
+
+#~ msgid "Community "
+#~ msgstr "مجتمع"
+
+msgid "Don't have an account"
+msgstr "لم يكن لديك حساب"
+
+msgid "Forgot password"
+msgstr "هل نسيت كلمة المرور"
+
+msgid "Keep me logged in"
+msgstr "أبق تسجيل دخولي"
+
+msgid "Sign in with Facebook"
+msgstr "الفيسبوك قم بتسجيل الدخول باستخدا"
+
+msgid "Sign in with Google"
+msgstr "تسجيل الدخول مع جوجل"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "or"
+msgstr "أو"
+
+msgid "Sign Up"
+msgstr "سجل"
+
+msgid "Choose from two types of accounts"
+msgstr "الاختيار من بين نوعين من الحسابات"
+
+msgid "Continue"
+msgstr "استمر"
+
+msgid "See for yourself why millions of people love kullshy.com"
+msgstr "نظر لنفسك لماذا الملايين من الناس ايحبون kullshy.com"
+
+# Business Register
+
+msgid "Create Your Account Business Type"
+msgstr "إنشاء حسابك الخاص نوع الشركة"
+
+msgid "Step"
+msgstr "خطوة"
+
+msgid "Next"
+msgstr "التالى"
+
+msgid "Company"
+msgstr "شركة"
+
+msgid "Address"
+msgstr "عنوان"
+
+msgid "Brief Description"
+msgstr "وصف مختصر"
+
+msgid "Country"
+msgstr "بلد"
+
+msgid "Add Company Logo"
+msgstr "إضافة شعار الشركة"
+
+msgid "PRIMARY CONTACT"
+msgstr "اتصال رئيسي"
+
+msgid "SECONDARY CONTACT"
+msgstr "الاتصال الثانوي"
+
+
+#Individual Register
+msgid "Create Your Account Individual"
+msgstr "إنشاء الفردية حسابك"
+
+msgid "Choose From"
+msgstr "اختر من"
+
+msgid "Choose Avatar"
+msgstr "اختيار الرمزية"
+
+msgid "Male"
+msgstr "ذكر"
+
+msgid "Female"
+msgstr "أنثى"
+
+#All categories
+
+msgid "All Categories"
+msgstr "جميع الفئات"
+
+msgid "LISTING LOCATION AND PRICE"
+msgstr "قائمه الموقع والأسعار"
+
+msgid "Price"
+msgstr "السعر"
+
+msgid "Currency"
+msgstr "عملة"
+
+
+msgid "Negotiable"
+msgstr "قابل للتفاوض"
+
+
+msgid "Delivery Included"
+msgstr "وشملت تسليم"
+
+msgid "Delivery Comments"
+msgstr "تسليم تعليقات"
+
+msgid "Add"
+msgstr "إضافة"
+
+msgid "Ad Features"
+msgstr "إعلان الميزات"
+
+# ad_name.html
+msgid "Ad Details"
+msgstr "تفاصيل الإعلان"
+
+msgid "Note"
+msgstr "ملاحظة"
+
+msgid "First Image would be the Featured Image for your advertisement"
+msgstr "أن الصورة الأولى أن يكون صورة مميزة لإعلانك"
+
+msgid "Submit"
+msgstr "عرض"
+
+msgid "Pay with Credit card"
+msgstr "دفع مع بطاقة الائتمان"
+
+msgid "Debit card"
+msgstr "بطاقة ائتمان"
+
+msgid "Upload Pictures"
+msgstr "رفع الصور"
+
+msgid "Enter Ad Title"
+msgstr "أدخل عنوان الإعلان"
+
+msgid "Enter Ad Description"
+msgstr "أدخل وصف الإعلان"
+
+msgid "Location of Item"
+msgstr "موقع البند"
+
+msgid "Featured Ad (2$)"
+msgstr "اعلان مميز (2 $)"
+
+msgid "Push to Top (2$)"
+msgstr "دفع إلى الأعلى (2 $)"
+
+msgid "Premium Ad (3$)"
+msgstr "قسط اعلان (3 $)"
+
+msgid "Featured Ad (2$) "
+msgstr "دفع إلى الأعلى (2 $)"
+
+msgid "BILLING INFORMATION"
+msgstr "معلومات الفواتير"
+
+msgid "Ad Option"
+msgstr "تبني"
+
+msgid "All Cities"
+msgstr "جميع المدن"
+
+
+############## Ad Details ##############
+
+msgid "Contact Seller"
+msgstr "تواصل مع البائع"
+
+msgid "Type"
+msgstr "اكتب"
+
+msgid "Condition"
+msgstr "شرط"
+
+msgid "More ads by User"
+msgstr "المزيد من الإعلانات من قبل مستخدم"
+
+msgid "Watch List"
+msgstr "قائمة المراقبة"
+
+msgid "Report ad"
+msgstr "تقرير الإعلانية"
+
+msgid "Comments"
+msgstr "تعليقات"
+
+msgid "Share This Ad"
+msgstr "شارك هذا الاعلان"
+
+msgid "Joined"
+msgstr "انضم"
+
+
+msgid "Safety Tips for Buyers"
+msgstr "نصائح لسلامة المشترين"
+
+msgid "Know more"
+msgstr "تعرف أكثر"
+
+msgid "Back to Results"
+msgstr "الرجوع الى النتائج"
+
+msgid "Google-plus"
+msgstr "جوجل بلس"
+
+msgid "Facebook"
+msgstr "فيس بوك"
+
+msgid "Twitter"
+msgstr ""
+
+msgid "Pinterest"
+msgstr "بينتيريست"
+
+msgid "Description"
+msgstr "وصف"
+
+msgid "Specification"
+msgstr "مواصفة"
+
+msgid "Customer Questions & Answers"
+msgstr "العملاء أسئلة وأجوبة"
+
+msgid "Customer Reviews"
+msgstr "آراء العملاء"
+
+msgid "LEAVE A COMMENT"
+msgstr "اترك تعليقا"
+
+msgid "Name"
+msgstr "اسم"
+
+msgid "Website"
+msgstr "موقع الكتروني"
+
+msgid "Message"
+msgstr "الرسالة"
+
+msgid "Welcome"
+msgstr "أهلا بك"
+
+msgid "My Ads"
+msgstr "الإعلانات"
+
+msgid "My Wishlist"
+msgstr "قائمة امنياتي"
+
+msgid "User Name"
+msgstr "اسم المستخدم"
+
+msgid "City"
+msgstr "مدينة"
+
+msgid "Primary Contact Number"
+msgstr "رقم الاتصال الأساسي"
+
+msgid "Secondary Contact Number"
+msgstr "الثانوية رقم الاتصال"
+
+msgid "Products"
+msgstr "المنتجات"
+
+msgid "My Profile"
+msgstr "ملفي الشخصي"
+
+msgid "Logout"
+msgstr "خروج"
+
+msgid "Update"
+msgstr "تحديث"
+
+msgid "Your wish list is empty"
+msgstr "قائمة رغباتك فارغة"

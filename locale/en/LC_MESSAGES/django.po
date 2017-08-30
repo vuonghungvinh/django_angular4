@@ -1,0 +1,497 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-24 09:43+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\templates\home.html:153
+msgid "latest"
+msgstr "latest"
+
+msgid "Featured"
+msgstr "Featured"
+
+#:\Accounts
+msgid "Business Account"
+msgstr "Business Account"
+
+msgid "Individual Account"
+msgstr "Individual Account"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "-- Choose City --"
+msgstr "-- Choose City --"
+
+msgid "Confirm Password"
+msgstr "Confirm Password"
+
+msgid "Enter last name"
+msgstr "Enter last name"
+
+msgid "Enter Password"
+msgstr "Enter Password"
+
+msgid "Enter first name"
+msgstr "Enter first name"
+
+msgid "First Name"
+msgstr "First Name"
+
+msgid "Last Name"
+msgstr "Last Name"
+
+
+msgid "Gender"
+msgstr "Gender"
+
+msgid "Select city"
+msgstr "Select city"
+
+
+msgid "Enter Contact Number"
+msgstr "Enter Contact Number"
+
+msgid "Enter Email"
+msgstr "Enter Email"
+
+msgid "Hide Personal Details"
+msgstr "Hide Personal Details"
+
+msgid "Hide Contact Details"
+msgstr "Hide Contact Details"
+
+
+msgid "You must confirm your password"
+msgstr "You must confirm your password"
+
+msgid "Email Address Already Exists"
+msgstr "Email Address Already Exists"
+
+msgid "Passwords do not match"
+msgstr "Passwords do not match"
+
+#:\home
+msgid "Login"
+msgstr "Login"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Cities"
+msgstr "Cities"
+
+msgid "Search All"
+msgstr "Search All"
+
+msgid "Classifieds"
+msgstr "Classifieds"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "Business"
+msgstr "Business"
+
+msgid "Jobs"
+msgstr "Jobs"
+
+
+msgid "Community"
+msgstr "Community"
+
+msgid "Advanced Search"
+msgstr "Advanced Search"
+
+msgid "Enter Keywords"
+msgstr "Enter Keywords"
+
+
+msgid "Deals and"
+msgstr "Deals and"
+
+
+msgid "Offers"
+msgstr "Offers"
+
+msgid "Business Directory "
+msgstr "Business Directory "
+
+msgid "Latest Business Listing "
+msgstr "Latest Business Listing "
+
+msgid "Automobiles"
+msgstr "Automobiles"
+
+msgid "Services "
+msgstr "Services "
+
+msgid "For Sale "
+msgstr "For Sale "
+
+msgid "Property "
+msgstr "Property "
+
+msgid "Learning "
+msgstr "Learning "
+
+msgid "Jobs "
+msgstr "Jobs "
+
+msgid "Pets"
+msgstr "Pets"
+
+msgid "Community "
+msgstr "Community"
+
+msgid "View More"
+msgstr "View More"
+
+msgid "Trusted Seller "
+msgstr "Trusted Seller"
+
+msgid "Categories"
+msgstr "Categories"
+
+
+msgid "Facebook Fans"
+msgstr "Facebook Fans"
+
+msgid "About"
+msgstr "About"
+
+msgid "Contact us"
+msgstr "Contact us"
+
+msgid "Get Social"
+msgstr "Get Social"
+
+msgid "Post"
+msgstr "Post"
+
+msgid "All rights reserved"
+msgstr "All rights reserved"
+
+msgid "Add Free Post"
+msgstr "Add Free Post"
+
+msgid "here"
+msgstr "here"
+
+msgid "Don't have an account"
+msgstr "Don't have an account"
+
+msgid "Forgot password"
+msgstr "Forgot password"
+
+msgid "Keep me logged in"
+msgstr "Keep me logged in"
+
+msgid "Sign in with Facebook"
+msgstr "Sign in with Facebook"
+
+msgid "Sign in with Google"
+msgstr "اSign in with Google"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "or"
+msgstr "or"
+
+msgid "Sign Up"
+msgstr "Sign Up"
+
+msgid "Choose from two types of accounts"
+msgstr "Choose from two types of accounts"
+
+msgid "Continue"
+msgstr "Continue"
+
+msgid "See for yourself why millions of people love kullshy.com"
+msgstr "See for yourself why millions of people love kullshy.com"
+
+#Business Register
+
+msgid "Create Your Account Business Type"
+msgstr "Create Your Account Business Type"
+
+msgid "Company Alias"
+msgstr "Company Alias"
+
+msgid "Company Name"
+msgstr "Company Name"
+
+msgid "Step"
+msgstr "Step"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Company HQ Location"
+msgstr "Company HQ Location"
+
+msgid "Company"
+msgstr "Company"
+
+msgid "Age"
+msgstr "Age"
+
+msgid "Type of Business"
+msgstr "Type of Business"
+
+msgid "Address"
+msgstr "Address"
+
+msgid "Brief Description"
+msgstr "Brief Description"
+
+msgid "Country"
+msgstr "Country"
+
+msgid "Designation"
+msgstr "Designation"
+
+msgid "Enter Designation"
+msgstr "Enter Designation"
+
+msgid "Enter brief description"
+msgstr "Enter brief description"
+
+msgid "Contact Number"
+msgstr "Contact Number"
+
+msgid "Add Company Logo"
+msgstr "Add Company Logo"
+
+msgid "PRIMARY CONTACT"
+msgstr "PRIMARY CONTACT"
+
+msgid "SECONDARY CONTACT"
+msgstr "SECONDARY CONTACT"
+
+msgid "Create Your Account Individual"
+msgstr "Create Your Account Individual"
+
+msgid "Choose From"
+msgstr "Choose From"
+
+msgid "Choose Avatar"
+msgstr "Choose Avatar"
+
+msgid "Male"
+msgstr "Male"
+
+msgid "Female"
+msgstr "Female"
+
+#All Categories 
+
+msgid "All Categories"
+msgstr "All Categories"
+
+# Adfeature.html
+
+msgid "LISTING LOCATION AND PRICE"
+msgstr "LISTING LOCATION AND PRICE"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Currency"
+msgstr "Currency"
+
+msgid "Negotiable"
+msgstr "Negotiable"
+
+msgid "Delivery Included"
+msgstr "Delivery Included"
+
+msgid "Delivery Comments"
+msgstr "Delivery Comments"
+
+msgid "Add"
+msgstr "Add"
+
+msgid "Ad Features"
+msgstr "Ad Features"
+
+#ad_name.html
+msgid "Ad Details"
+msgstr "Ad Details"
+
+msgid "Note"
+msgstr "Note"
+
+msgid "First Image would be the Featured Image for your advertisement"
+msgstr "First Image would be the Featured Image for your advertisement"
+
+msgid "Submit"
+msgstr "Submit"
+
+msgid "Pay with Credit card"
+msgstr "Pay with Credit card"
+
+msgid "Debit card"
+msgstr "Debit card"
+
+msgid "Upload Pictures"
+msgstr "Upload Pictures"
+
+msgid "Enter Ad Title"
+msgstr "Enter Ad Title"
+
+msgid "Enter Ad Description"
+msgstr "Enter Ad Description"
+
+msgid "Location of Item"
+msgstr "Location of Item"
+
+msgid "Featured Ad (2$)"
+msgstr "Featured Ad (2$)"
+
+msgid "Push to Top (2$)"
+msgstr "Push to Top (2$)"
+
+msgid "Premium Ad (3$)"
+msgstr "Premium Ad (3$)"
+
+msgid "Featured Ad (2$) "
+msgstr "دفع إلى الأعلى (2 $)"
+
+msgid "BILLING INFORMATION"
+msgstr "BILLING INFORMATION"
+
+msgid "Ad Option"
+msgstr "Ad Option"
+
+
+msgid "All Cities"
+msgstr "All Cities"
+
+
+############## Ad Details ##############
+
+msgid "Contact Seller"
+msgstr "Contact Seller"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Condition"
+msgstr "Condition"
+
+msgid "More ads by User"
+msgstr "More ads by User"
+
+msgid "Watch List"
+msgstr "Watch List"
+
+msgid "Report ad"
+msgstr "Report ad"
+
+msgid "Comments"
+msgstr "Comments"
+
+msgid "Share This Ad"
+msgstr "Share This Ad"
+
+msgid "Joined"
+msgstr "Joined"
+
+msgid "Safety Tips for Buyers"
+msgstr "Safety Tips for Buyers"
+
+msgid "Know more"
+msgstr "Know more"
+
+msgid "Back to Results"
+msgstr "Back to Results"
+
+msgid "Google-plus"
+msgstr "Google-plus"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Twitter"
+msgstr "تغريد"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Specification"
+msgstr "Specification"
+
+msgid "Customer Questions & Answers"
+msgstr "Customer Questions & Answers"
+
+msgid "Customer Reviews"
+msgstr "Customer Reviews"
+
+msgid "LEAVE A COMMENT"
+msgstr "LEAVE A COMMENT"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Welcome"
+msgstr "Welcome"
+
+msgid "My Ads"
+msgstr "My Ads"
+
+msgid "My Wishlist"
+msgstr "My Wishlist"
+
+msgid "User Name"
+msgstr "User Name"
+
+msgid "City"
+msgstr "City"
+
+msgid "Primary Contact Number"
+msgstr "Primary Contact Number"
+
+
+msgid "Secondary Contact Number"
+msgstr "Secondary Contact Number"
+
+msgid "Products"
+msgstr "Products"
+
+
+msgid "My Profile"
+msgstr "My Profile"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Update"
+msgstr "Update"
+
+msgid "Your wish list is empty"
+msgstr "Your wish list is empty"

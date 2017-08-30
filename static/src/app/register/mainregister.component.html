@@ -1,0 +1,36 @@
+<div class="login-wraper signup sign_up">
+    <div class="container">
+        <div class="row">
+            <h1>Signup Now</h1>
+            <div class="jumbotron signup-jumbo">
+                <!-- Signup left section -->
+                <div class="col-sm-7 accnt_typ  sign_main">
+                    <h1><span>Choose from two types of accounts: </span></h1>
+                    <div class="user_imgs">
+                        <img src="ng/images/bnnr3.jpg" class="img-responsive user_s">
+                    </div>
+                </div>
+                <!-- Signup right section -->
+                <div class="col-sm-5 sign_frm">
+                    <form role="form" class="signup_form radio_btn">
+                        <div class="span4 right-col  new-accnt">
+                            <div class="squaredOne">
+                                <input type="radio" [(ngModel)]="type" [checked]="type==1" [value]="1" id="squaredOne" name="check">
+                                <label for="squaredOne"><span>Individual account</span></label>
+                            </div>
+                            <p>Shop, send and receive overseas payments. All without sharing your financial information.</p>
+                            <div class="squaredOne">
+                                <input type="radio" [(ngModel)]="type" [checked]="type==2" [value]="2" id="squaredtwo" name="check">
+                                <label for="squaredtwo"><span>Business account</span></label>
+                            </div>
+                            <p>Accept credit and debit cards, and send invoices to your overseas customers.</p>
+                        </div>
+                        <div class="form-group">
+                            <button (click)="continue()" class="regis_ter btns"><span><i class="fa fa-user-plus" aria-hidden="true"></i></span>Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

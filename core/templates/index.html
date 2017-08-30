@@ -1,0 +1,54 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>KullShy</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/loading_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link href="{{ ANGULAR_URL }}node_modules/ng2-toastr/bundles/ng2-toastr.min.css" rel="stylesheet" />
+    <!-- <link href="{{ ANGULAR_URL }}dist/styles.0b64228993005c098406.bundle.css" rel="stylesheet"/> -->
+    <base href="/">
+  </head>
+
+  <body>
+    <app-root></app-root>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+     
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+     
+    </div>
+
+    <script type="text/javascript" src="{{ ANGULAR_URL }}dist/inline.bundle.js"></script>
+    <script type="text/javascript" src="{{ ANGULAR_URL }}dist/polyfills.bundle.js"></script>
+    <!-- <script type="text/javascript" src="{{ ANGULAR_URL }}dist/styles.bundle.js"></script> -->
+    <script type="text/javascript" src="{{ ANGULAR_URL }}dist/vendor.bundle.js"></script>
+    <script type="text/javascript" src="{{ ANGULAR_URL }}dist/main.bundle.js"></script>
+    <!-- <script type="text/javascript" src="{{ ANGULAR_URL }}dist/inline.30ef5a68cb68b8eefe83.bundle.js"></script>
+    <script type="text/javascript" src="{{ ANGULAR_URL }}dist/polyfills.c1dd16e57fa8d11134c9.bundle.js"></script>
+    <script type="text/javascript" src="{{ ANGULAR_URL }}dist/vendor.be988a3b14fca461308f.bundle.js"></script>
+    <script type="text/javascript" src="{{ ANGULAR_URL }}dist/main.57d81c228990e6105bf6.bundle.js"></script> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/sliderlocation.js' %}"></script>
+    <script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('body').addClass('loaded');
+        });
+    </script>
+  </body>
+</html>

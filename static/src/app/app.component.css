@@ -1,0 +1,6 @@
+button:disabled{
+	cursor: not-allowed;
+}
+.dropdown-menu > li > a{
+	cursor: pointer;
+}

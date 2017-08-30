@@ -1,0 +1,181 @@
+<div class="top-header">
+	<div class="container">
+		<div class="row">
+			<ul class="pull-right">
+				<li>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="ng/images/flag.png">
+						<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
+						<ul class="dropdown-menu flag">
+							<li><a href="#"><img src="ng/images/flag.png"><span>UAE</span></a></li>
+							<li><a href="#"><img src="ng/images/flag.png"><span>UAE</span></a></li>
+							<li><a href="#"><img src="ng/images/flag.png"><span>UAE</span></a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">cities
+						<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
+						<ul class="dropdown-menu city">
+							<li><a href="#">Dubai</a></li>
+							<li><a href="#">Abu Dhabi</a></li>
+							<li><a href="#">Sharjah</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">english
+						<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
+						<ul class="dropdown-menu lang">
+							<li><a href="#">Hindi</a></li>
+							<li><a href="#">Punjabi</a></li>
+							<li><a href="#">French</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<header id="main-header">
+	<div class="container">
+		<div class="row">
+			<div class="logo col-sm-3">
+				<a routerLink=""><img src="ng/images/head_logo.png" class="img-responsive" alt="kullshy"></a>
+			</div>
+			<div [hidden]="commonService.getUrl().indexOf('login') >= 0 || commonService.getUrl().indexOf('register') >= 0" class="top-search col-sm-6">
+				<form class="navbar-form" role="search" (ngSubmit)="searchForm(f.value)" #f="ngForm">
+					  <select class="form-control" name="type" #type="ngModel" [(ngModel)]="defaulttype">
+						<option value="marketplace">Marketplace</option>
+						<option value="store">Store</option>
+						<option value="user">User</option>
+					  </select>
+					<div class="input-group add-on">
+					  <input class="form-control" placeholder="Search categories here..." name="key" #key="ngModel" ngModel id="srch-term" type="text">
+					  <div class="input-group-btn">
+						<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+					  </div>
+					</div>
+				</form>
+			</div>
+			<div [hidden]="commonService.getUrl().indexOf('login') >= 0 || commonService.getUrl().indexOf('register') >= 0" class="top-right col-sm-3">
+				<div class="dropdown acc_ount">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							<img *ngIf="!authencativeService.checkLogin()" src="ng/images/top_user.png" class="img-responsive">
+
+							<img *ngIf="authencativeService.checkLogin() && authencativeService.getUser().user.business_user != null"  [src]="authencativeService.getUser().user.business_user.company_logo==null?'ng/images/top_user.png':authencativeService.getUser().user.business_user.company_logo" class="img-responsive">
+
+							<img *ngIf="authencativeService.checkLogin() && authencativeService.getUser().user.individual_user != null"  [src]="authencativeService.getUser().user.individual_user.avatar==null?'ng/images/top_user.png':authencativeService.getUser().user.individual_user.avatar" class="img-responsive">
+							{{!authencativeService.checkLogin()?'Account':authencativeService.getUser().user.username}}
+						<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
+						<ul class="dropdown-menu">
+							<li *ngIf="!authencativeService.checkLogin()"><a routerLink="login">Sign In</a></li>
+							<li *ngIf="!authencativeService.checkLogin()"><a routerLink="register">Register</a></li>
+							<li *ngIf="authencativeService.checkLogin()"><a (click)="logout()">Logout</a></li>
+						</ul>
+				</div>
+				<div class="dropdown cart pull-right">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-shopping-cart" aria-hidden="true"></i>0
+						<span><i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<alert></alert>
+<router-outlet (activate)="onActivate($event, outlet)" #outlet></router-outlet>	
+
+<div class="footer ss">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<img src="ng/images/foot_logo.png">
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text industry</p>
+				<ul>
+					<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span>4th Floor, 5 Wallace Street, Newyork.</span></a></li>
+					<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span>(000) 2345 - 6789</span></a></li>
+					<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span>kullshy@admin.com</span></a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<h4>Popular Searches</h4>
+				<ul>
+					<li><a href="#">Phone 7</a></li>
+					<li><a href="#">IPhone 6</a></li>
+					<li><a href="#">Samsung Galaxy S7 Edge</a></li>
+					<li><a href="#">International Shipping</a></li>
+					<li><a href="#">OnePlus 3T</a></li>
+					<li><a href="#">HTC U Ultra</a></li>
+					<li><a href="#">Samsung TVs</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<h4>My Account</h4>
+				<ul>
+					<li><a href="#">Log In / Register</a></li>
+					<li><a href="#">My Shopping Cart</a></li>
+					<li><a href="#">My Orders</a></li>
+					<li><a href="#">My Addresses</a></li>
+					<li><a href="#">Wish Lists</a></li>
+					<li><a href="#">Account Settings</a></li>
+					<li><a href="#">Account Summary</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 col-xs-6">
+				<h4>Selling on</h4>
+				<ul>
+					<li><a href="#">  Sell on kullshy.com</a></li>
+					<li><a href="#"> How It Works</a></li>
+					<li><a href="#">Selling Policies</a></li>
+					<li><a href="#">Seller Terms and Conditions</a></li>
+					<li><a href="#"> Fulfilled by kullshy</a></li>
+					<li><a href="#">FAQs</a></li>
+				</ul>
+			</div>
+			<div class="foot_last tab_le">
+				<div class="connectd">
+					<h5>stay connected</h5>
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="cards pull-right">
+					<ul>
+						<li><a href="#"><img src="ng/images/card_1.png"></a></li>
+						<li><a href="#"><img src="ng/images/card_2.png"></a></li>
+						<li><a href="#"><img src="ng/images/card_3.png"></a></li>
+						<li><a href="#"><img src="ng/images/card_4.png"></a></li>
+						<li><a href="#"><img src="ng/images/card_5.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="last_div">
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Media Center </a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms and Conditions</a></li>
+				<li><a href="#">Affiliate Program</a></li>
+			</ul>
+			<p class="all_rights">© 2017  All Rights Reserved.</p>
+		</div>
+	</div>
+</div>

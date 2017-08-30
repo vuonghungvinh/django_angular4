@@ -1,0 +1,67 @@
+<div class="container marketplace">
+    <div class="well well-sm">
+        <strong>Display</strong>
+        <div class="btn-group">
+            <a (click)="viewList()" id="list" [ngClass]="isgrid?'':'select'" class="btn btn-default btn-sm">
+            	<span class="glyphicon glyphicon-th-list"></span>
+            	List
+            </a>
+            <a (click)="viewGrid()" id="grid" [ngClass]="isgrid?'select':''" class="btn btn-default btn-sm">
+            	<span class="glyphicon glyphicon-th"></span>
+            	Grid
+            </a>
+        </div>
+    </div>
+    <div id="adnames" class="row list-group">
+        <div *ngFor="let adname of adnames" [ngClass]="isgrid?'grid-group-item':'list-group-item'" class="item  col-sm-6 col-xs-12 col-lg-4">
+            <div class="thumbnail">
+            	<img *ngIf="adname.adimages.length > 0" [src]="[adname.adimages[0].image]">
+                <img *ngIf="adname.adimages.length <= 0" src="http://placehold.it/400x250/000/fff">
+                <div class="caption">
+                    <h3 class="group inner list-group-item-heading">
+                        {{adname.ad_title}}</h3>
+                    <p class="group inner list-group-item-text">
+                        {{adname.ad_description}}</p>
+                    <div class="row category">
+                    	<div class="col-xs-12 col-md-12">
+                    		<span *ngIf="adname.cat">{{adname.cat.category}}</span>
+                    		<span *ngIf="adname.sub_cat">> {{adname.sub_cat.sub_category}}</span>
+                    		<span>: {{adname.created|date:"yyyy-MM-dd"}}</span>
+                    	</div>
+                    </div>
+                    <div class="row user">
+                    	<div class="col-xs-12 col-md-12">
+                    		<img *ngIf="adname.user && adname.user.individual_user" [src]="adname.user.individual_user.avatar|checkurl">
+                    		<img *ngIf="adname.user && adname.user.business_user" [src]="adname.user.business_user.company_logo">
+                    		<img *ngIf="adname.user && !adname.user.business_user && !adname.user.individual_user" src="">
+                    		<span *ngIf="adname.user && adname.user.individual_user">{{adname.user.username}}</span>
+                    		<span *ngIf="adname.user && adname.user.business_user">{{adname.user.business_user.comp_name}}</span>
+                    	</div>
+                    </div>
+                    <div class="row last">
+                        <div class="col-xs-7 col-md-6">
+                            <span class="lead">Price:</span>
+                            <span *ngIf="adname.adname_feature && adname.adname_feature.feature_price.length > 0">{{adname.adname_feature.feature_price[0].currency}} {{adname.adname_feature.feature_price[0].price}}</span>
+                        </div>
+                        <div class="col-xs-5 col-md-6 text-right">
+                            <a class="btn btn-success" [routerLink]="['/ad-detail', adname.slug]" [queryParams]="{ id: adname.pk }">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div *ngIf="adnames && adnames.length<=0" class="col-md-12 text-center">
+        	<h2>Not Found</h2>
+        </div>
+    </div>
+    <div class="row pagination-container">
+        <div *ngIf="adnames && adnames.length>0" class="col-md-12 text-right">
+            <ul class="pagination1 modal-5">
+                <li [ngClass]="cur<=1?'disabled':''"><a (click)="prev()" class="prev fa fa-arrow-left"> </a></li>
+                <li *ngFor="let page of pages"><a (click)="selectpage(page)" [ngClass]="page==cur?'active':''">{{page}}</a></li>
+                <li [ngClass]="cur>=total?'disabled':''"><a (click)="next()" class="next fa fa-arrow-right"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

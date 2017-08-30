@@ -1,0 +1,4 @@
+<div style="margin: 0" *ngIf="message" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }" role="alert">
+	<button type="button" class="close" (click)="closeAlert()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	{{message.text}}
+</div>
